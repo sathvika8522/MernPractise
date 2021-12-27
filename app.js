@@ -2,6 +2,7 @@ const exp=require('express')
 const app=exp()
 const mongoose=require('mongoose')
 const dotenv=require('dotenv')
+const User=require('./models/userSchema')
 
 dotenv.config({path:'./config.env'});
 const dburl=process.env.DATABASEURL;
