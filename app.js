@@ -4,6 +4,8 @@ const mongoose=require('mongoose')
 const dotenv=require('dotenv')
 const User=require('./models/userSchema')
 
+app.use(require('./routes/authorization'))
+
 dotenv.config({path:'./config.env'});
 const dburl=process.env.DATABASEURL;
 
